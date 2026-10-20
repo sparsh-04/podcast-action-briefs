@@ -1,0 +1,16 @@
+.git/
+.superpowers/
+.vercel/
+docs/
+tests/
+dist/
+__pycache__/
+*.pyc
+*.db*
+*.sqlite*
+capture/
+captures/
+transcript/
+transcripts/
+work/
+outputs/

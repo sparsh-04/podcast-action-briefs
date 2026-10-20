@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Evidence-checked action briefs from podcast episodes.">
+    <title>Podcast Action Briefs</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#briefs">Skip to briefs</a>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Public · Read-only</p>
+        <h1>Podcast Action Briefs</h1>
+        <p class="lede">The useful conclusion, what to do, and how strong the evidence is—without listening to every hour.</p>
+        <div class="notice" role="note">
+          <strong>Educational notes, not medical advice.</strong>
+          Health actions may require a qualified clinician, especially with medicines, chronic conditions, pregnancy, or new symptoms.
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-labelledby="filter-heading">
+        <div class="toolbar-heading">
+          <div>
+            <p class="section-label">Published library</p>
+            <h2 id="filter-heading"><span id="brief-count">—</span> briefs</h2>
+          </div>
+          <button id="reset-filters" class="text-button" type="button">Clear filters</button>
+        </div>
+        <div class="filters">
+          <label class="search-field">Search
+            <input id="query" type="search" placeholder="Episode, conclusion, action, or risk" autocomplete="off">
+          </label>
+          <label>Podcast
+            <select id="podcast-filter"><option value="">All podcasts</option></select>
+          </label>
+          <label>Topic
+            <select id="domain-filter"><option value="">All topics</option></select>
+          </label>
+          <label>Evidence
+            <select id="verdict-filter"><option value="">All verdicts</option></select>
+          </label>
+          <label>Priority
+            <select id="priority-filter"><option value="">All priorities</option></select>
+          </label>
+          <label>Applies to
+            <select id="applicability-filter"><option value="">All audiences</option></select>
+          </label>
+        </div>
+        <p id="results-status" class="results-status" role="status" aria-live="polite">Loading briefs…</p>
+      </section>
+
+      <section id="briefs" class="brief-list" aria-label="Podcast briefs" aria-busy="true">
+        <p class="empty-state">Loading the published snapshot…</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Briefs preserve the original research snapshot and source links. Recheck time-sensitive guidance before acting.</p>
+    </footer>
+
+    <script src="/dashboard.js" defer></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
