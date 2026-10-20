@@ -2,6 +2,9 @@
 
 A public, read-only dashboard of evidence-checked podcast briefs. Each published brief keeps its original conclusion, action items, reasons, practical protocol, evidence assessment, safety notes, applicability, and source links.
 
+- Live dashboard: <https://podcast-action-briefs.vercel.app/>
+- Source repository: <https://github.com/sparsh-04/podcast-action-briefs>
+
 The public snapshot intentionally includes the personal and family applicability recorded in each final brief. It does not include raw transcripts, SQLite data, processing history, capture files, Pocket Casts session data, archive tokens, local paths, or generated Word files.
 
 ## Run locally
