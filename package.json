@@ -9,6 +9,6 @@
     "build": "node scripts/build.mjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": "22.x"
   }
 }
